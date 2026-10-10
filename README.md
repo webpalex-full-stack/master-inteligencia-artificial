@@ -1,436 +1,398 @@
-# Master Inteligencia Artificial — Repositorio de aprendizaje y pruebas
+# Máster de Inteligencia Artificial aplicada al Desarrollo de Software
 
-Este repositorio forma parte de mi proceso de formación en inteligencia artificial aplicada al desarrollo de software.
+Este repositorio forma parte de mi formación en inteligencia artificial aplicada al desarrollo de software.
 
-Lo utilizaré principalmente durante el máster **AI4Devs**, como espacio de pruebas para experimentar con herramientas, conceptos y metodologías relacionadas con el desarrollo de software asistido por inteligencia artificial.
+Lo utilizaré como espacio de pruebas, ejercicios y experimentación durante el programa **AI4Devs**, con el objetivo de profundizar en nuevas formas de desarrollar software utilizando herramientas de inteligencia artificial, agentes y automatización.
 
-La intención de este repositorio no es construir inicialmente un producto destinado a producción, sino disponer de un entorno seguro donde poder practicar sin afectar a proyectos profesionales ni exponer código perteneciente a mi empresa.
-
----
-
-## Sobre mí
-
-Soy desarrollador de software con varios años de experiencia profesional, principalmente trabajando como **Full Stack Developer**, aunque actualmente mi mayor especialización está en backend.
-
-Mi stack habitual está relacionado principalmente con:
-
-- .NET
-- C#
-- Entity Framework Core
-- SQL Server
-- APIs REST
-- Angular
-- Arquitecturas backend
-- Git
-- Azure DevOps
-
-Durante los últimos años he trabajado en proyectos reales de cierta complejidad, con aplicaciones que tienen bastante lógica de negocio, múltiples capas, migraciones de base de datos, integraciones, procesos de mantenimiento y código legacy.
-
-Uno de mis objetivos profesionales es evolucionar progresivamente hacia un perfil de **arquitectura de software**, especialmente dentro del ecosistema .NET.
-
-Al mismo tiempo, considero que la inteligencia artificial está cambiando de forma importante la manera en la que desarrollamos software y quiero aprender a utilizar estas herramientas correctamente, no simplemente como generadores de código.
+El repositorio tiene un propósito principalmente educativo y servirá como laboratorio para realizar ejercicios, probar herramientas y documentar aprendizajes a medida que avance el programa.
 
 ---
 
-# Por qué estoy haciendo este máster
+## Objetivo
 
-Hasta ahora he utilizado inteligencia artificial principalmente mediante herramientas conversacionales.
+El objetivo principal de esta formación es entender cómo está evolucionando el desarrollo de software con la incorporación de modelos de lenguaje, coding agents y nuevas herramientas capaces de participar de forma activa en el ciclo de desarrollo.
 
-Mi herramienta principal ha sido ChatGPT Plus.
+El interés no está únicamente en aprender a generar código mediante IA, sino en comprender cómo integrar estas herramientas de forma estructurada dentro de procesos reales de ingeniería de software.
 
-El flujo de trabajo que utilizo actualmente suele ser bastante manual.
+Durante el programa se trabajan conceptos relacionados con:
 
-Por ejemplo, cuando tengo que desarrollar una nueva funcionalidad, suelo proporcionar a la IA diferentes partes del contexto:
-
-- requisitos funcionales,
-- entidades,
-- DTOs,
-- handlers,
-- repositorios,
-- servicios,
-- mappings,
-- consultas SQL,
-- migraciones,
-- tests,
-- fragmentos de código relacionados.
-
-La IA me ayuda a analizar el cambio y proponer modificaciones.
-
-Sin embargo, posteriormente soy yo quien aplica cada cambio manualmente dentro del proyecto.
-
-Después reviso los diffs, comparo código, cuestiono algunas decisiones y corrijo aquellas propuestas que no considero adecuadas.
-
-Este sistema me resulta bastante útil porque me obliga a revisar el código generado.
-
-Sin embargo, sigue siendo un proceso muy artesanal.
-
-La IA no conoce directamente el repositorio, no puede recorrer libremente el proyecto, no puede ejecutar comandos y tampoco puede realizar cambios completos de forma autónoma.
-
-Precisamente uno de mis objetivos con este máster es aprender a dar el siguiente paso.
-
----
-
-# Del asistente al agente
-
-Una de las ideas que quiero explorar durante esta formación es la transición entre utilizar una IA como asistente y utilizarla como agente.
-
-En un modelo tradicional de asistente, el flujo podría ser:
-
-1. El desarrollador selecciona código.
-2. Copia el código.
-3. Lo envía a la IA.
-4. La IA propone una solución.
-5. El desarrollador aplica manualmente los cambios.
-
-En un modelo agéntico, el flujo puede evolucionar hacia algo diferente:
-
-1. El desarrollador define correctamente el problema.
-2. El agente recibe acceso controlado al proyecto.
-3. Analiza la estructura del repositorio.
-4. Localiza los archivos relevantes.
-5. Propone un plan.
-6. Modifica diferentes archivos.
-7. Ejecuta comandos.
-8. Ejecuta tests.
-9. Verifica los resultados.
-10. El desarrollador revisa el trabajo realizado.
-
-El desarrollador continúa siendo responsable del resultado, pero cambia parcialmente su función.
-
-Ya no se limita únicamente a escribir código.
-
-También debe:
-
-- definir correctamente el problema,
-- proporcionar contexto,
-- establecer restricciones,
-- revisar decisiones,
-- validar código generado,
-- detectar edge cases,
-- supervisar agentes,
-- controlar la calidad final.
-
-Este cambio de mentalidad es una de las razones principales por las que estoy realizando esta formación.
-
----
-
-# Objetivos del repositorio
-
-Este repositorio servirá como entorno de experimentación durante el máster.
-
-No existe inicialmente una única aplicación que deba desarrollarse hasta producción.
-
-La idea es utilizarlo para diferentes ejercicios.
-
-Entre otras cosas quiero practicar:
-
-## Uso de coding agents
-
-Experimentar con herramientas capaces de trabajar directamente sobre un repositorio.
-
-Por ejemplo:
-
-- Claude Code
-- herramientas compatibles con MCP
-- agentes de programación
-- asistentes integrados en entornos de desarrollo
-
-El objetivo no será simplemente conseguir que la IA genere código.
-
-El objetivo será aprender a controlar correctamente el proceso.
-
----
-
-## Context engineering
-
-Otro de los aspectos que quiero estudiar es cómo proporcionar contexto de forma eficiente.
-
-Un modelo puede ser muy potente, pero si recibe un contexto incorrecto o incompleto puede producir soluciones técnicamente válidas que no encajen con el proyecto.
-
-Por eso quiero experimentar con diferentes mecanismos para proporcionar contexto:
-
-- documentación del proyecto,
-- README,
-- archivos de instrucciones,
+- agentes de programación,
+- contexto,
 - especificaciones,
-- convenciones,
+- automatización,
+- testing,
+- documentación,
+- seguridad,
+- observabilidad,
 - arquitectura,
-- ejemplos existentes,
-- documentación técnica.
+- DevOps,
+- bases de datos,
+- RAG,
+- sistemas multiagente.
 
 ---
 
-## MCP
+# Temario
 
-También utilizaré este repositorio para experimentar con **Model Context Protocol (MCP)**.
+El programa está organizado en diferentes módulos que recorren buena parte del ciclo de vida del desarrollo de software.
+
+## Harness Engineering
+
+Una de las primeras áreas del curso se centra en **Harness Engineering**.
+
+El objetivo es entender cómo trabajar correctamente con herramientas de inteligencia artificial y coding agents.
+
+Entre los temas tratados se encuentran:
+
+- herramientas de programación asistida por IA,
+- Claude Code,
+- contexto,
+- prompts,
+- hooks,
+- subagentes,
+- plan mode,
+- MCP,
+- economía de tokens,
+- modelos locales,
+- routing de modelos.
+
+La idea principal es aprender a configurar correctamente el entorno que rodea al modelo para que pueda trabajar de forma más efectiva.
+
+---
+
+## Spec Driven Development
+
+Otro bloque importante está dedicado al desarrollo basado en especificaciones.
+
+Antes de generar código es necesario definir correctamente qué debe construirse.
+
+Durante este módulo se trabajan conceptos como:
+
+- requisitos,
+- PRD,
+- especificaciones,
+- épicas,
+- historias de usuario,
+- definición de tareas,
+- relación entre requisitos y desarrollo.
+
+El objetivo es reducir la ambigüedad y proporcionar mejores instrucciones a los agentes.
+
+---
+
+## OpenSpec
+
+El programa profundiza también en herramientas y metodologías para trabajar con especificaciones estructuradas.
+
+La idea es que las especificaciones puedan convertirse en una fuente de contexto para los agentes y acompañar al proyecto durante todo su ciclo de vida.
+
+---
+
+## Documentación y revisión adversarial
+
+La documentación adquiere una importancia especial cuando los agentes participan en el desarrollo.
+
+Durante este bloque se estudian técnicas para:
+
+- generar documentación,
+- mantener documentación viva,
+- revisar especificaciones,
+- detectar inconsistencias,
+- realizar revisiones críticas,
+- cuestionar soluciones generadas por IA.
+
+El objetivo es mejorar la calidad del resultado antes de llegar a producción.
+
+---
+
+## Agent Guardrails
+
+Los agentes pueden ejecutar acciones y modificar sistemas, por lo que necesitan límites claros.
+
+Este módulo trabaja conceptos relacionados con:
+
+- permisos,
+- restricciones,
+- control de acciones,
+- seguridad,
+- validación,
+- supervisión.
+
+El objetivo es entender cómo controlar el comportamiento de los agentes dentro de un entorno de desarrollo.
+
+---
+
+## IA aplicada a proyectos Legacy
+
+Una parte especialmente interesante del programa está dedicada al uso de IA en proyectos existentes.
+
+Trabajar sobre un proyecto nuevo es muy diferente de hacerlo sobre una base de código madura.
+
+En este bloque se estudian aspectos como:
+
+- comprensión de código existente,
+- análisis de dependencias,
+- documentación automática,
+- refactorización,
+- mantenimiento,
+- modernización.
+
+---
+
+## IA en proyectos Polyrepo
+
+Muchos sistemas reales están distribuidos entre varios repositorios.
+
+Durante este módulo se estudia cómo trabajar con agentes cuando el contexto está repartido entre diferentes proyectos y componentes.
+
+Esto introduce retos adicionales relacionados con:
+
+- contexto,
+- dependencias,
+- integración,
+- arquitectura,
+- coordinación entre repositorios.
+
+---
+
+## Evaluación de agentes
+
+Otro de los temas importantes es aprender a evaluar el comportamiento de los agentes.
+
+No basta con que una solución parezca correcta.
+
+Es necesario medir aspectos como:
+
+- calidad,
+- precisión,
+- comportamiento,
+- consistencia,
+- seguridad,
+- cumplimiento de requisitos.
+
+---
+
+# Ética, regulación y privacidad
+
+La incorporación de inteligencia artificial al desarrollo de software también plantea cuestiones relacionadas con:
+
+- privacidad,
+- uso de datos,
+- propiedad intelectual,
+- regulación,
+- seguridad,
+- responsabilidad.
+
+El programa dedica un módulo específico a estos aspectos.
+
+---
+
+# Bases de datos e inteligencia artificial
+
+El curso también aborda nuevas formas de trabajar con datos utilizando herramientas de IA.
+
+Entre otros conceptos se estudian:
+
+- bases de datos tradicionales,
+- búsqueda semántica,
+- embeddings,
+- campos vectoriales,
+- recuperación de información.
+
+Estos conceptos son especialmente importantes para construir aplicaciones basadas en RAG.
+
+---
+
+# Backend, TDD y testing
+
+La IA también puede participar en la generación y mantenimiento de tests.
+
+Durante este módulo se estudian aspectos relacionados con:
+
+- TDD,
+- pirámide de testing,
+- tests unitarios,
+- tests de integración,
+- automatización,
+- validación de comportamiento.
+
+---
+
+# Frontend y Design Systems
+
+El programa también incluye una parte dedicada al desarrollo frontend.
+
+Entre los temas tratados se encuentran:
+
+- Design Systems,
+- componentes reutilizables,
+- consistencia visual,
+- testing de frontend,
+- generación asistida por IA.
+
+---
+
+# DevSecOps
+
+La inteligencia artificial puede participar también en tareas relacionadas con infraestructura y despliegue.
+
+Durante estos módulos se trabajan conceptos relacionados con:
+
+- CI/CD,
+- infraestructura,
+- automatización,
+- seguridad,
+- observabilidad,
+- monitorización.
+
+---
+
+# RAG
+
+Uno de los laboratorios del programa está dedicado a construir un chatbot basado en documentación.
+
+Este tipo de arquitectura se conoce habitualmente como:
+
+**Retrieval-Augmented Generation (RAG)**
+
+El objetivo es permitir que un modelo pueda responder utilizando información recuperada desde una fuente documental.
+
+Durante este laboratorio se utilizan tecnologías relacionadas con:
+
+- recuperación de información,
+- embeddings,
+- LangChain,
+- Streamlit,
+- modelos de lenguaje.
+
+---
+
+# Sistemas multiagente
+
+Otro de los laboratorios está dedicado a sistemas formados por varios agentes.
+
+En lugar de tener un único modelo realizando toda la tarea, diferentes agentes pueden especializarse en responsabilidades distintas.
+
+Durante este bloque se estudian herramientas y conceptos como:
+
+- LangGraph,
+- PydanticAI,
+- AutoGen,
+- MCP,
+- coordinación entre agentes,
+- monitorización.
+
+---
+
+# Model Context Protocol
+
+Uno de los conceptos importantes del programa es **MCP — Model Context Protocol**.
 
 MCP permite conectar modelos de inteligencia artificial con herramientas y fuentes externas mediante un protocolo estándar.
 
-Algunas posibles integraciones podrían incluir:
+Algunos ejemplos de estas fuentes pueden ser:
 
-- GitHub,
-- filesystem,
+- sistemas de archivos,
+- repositorios Git,
 - documentación,
 - APIs,
-- bases de datos,
-- herramientas de desarrollo.
+- herramientas de desarrollo,
+- servicios externos.
 
-Una de las primeras pruebas realizadas durante el precurso consistió precisamente en conectar Claude Desktop con el filesystem local mediante MCP.
-
-Claude pudo acceder a una carpeta autorizada y leer un archivo sin necesidad de copiar manualmente su contenido dentro del chat.
-
-Posteriormente utilizaré también la integración con GitHub para permitir que Claude pueda consultar este repositorio.
+Este repositorio se utilizará también para realizar algunas pruebas relacionadas con MCP.
 
 ---
 
-# Seguridad y aislamiento
+# Agentic Engineering
 
-Este repositorio es deliberadamente independiente de los proyectos profesionales en los que trabajo.
+Uno de los conceptos centrales de la formación es **Agentic Engineering**.
 
-Actualmente mi empresa no utiliza herramientas de inteligencia artificial de forma corporativa dentro del flujo de desarrollo.
+El desarrollo de software está evolucionando desde un modelo en el que la inteligencia artificial simplemente sugiere código hacia otro en el que los agentes pueden realizar tareas más completas.
 
-Por ese motivo no quiero conectar repositorios profesionales mediante cuentas personales de herramientas de IA.
+Esto introduce nuevas responsabilidades dentro del desarrollo de software:
 
-Antes de plantear cualquier adopción empresarial quiero comprender correctamente:
-
-- cómo funcionan los agentes,
-- qué permisos necesitan,
-- qué datos utilizan,
-- cómo gestionan el contexto,
-- cómo se controla el acceso,
-- qué riesgos existen,
-- qué beneficios reales aportan.
-
-Este repositorio permite experimentar con libertad sin comprometer información profesional.
+- definir correctamente los problemas,
+- proporcionar contexto,
+- establecer restricciones,
+- supervisar agentes,
+- revisar resultados,
+- validar soluciones.
 
 ---
 
-# Principios de trabajo
+# Objetivos de aprendizaje
 
-Durante el máster intentaré aplicar algunos principios.
-
-## 1. La IA no sustituye la revisión
-
-Todo código generado debe ser revisado.
-
-Que una solución compile no significa necesariamente que sea correcta.
-
-También debe evaluarse:
-
-- mantenibilidad,
-- legibilidad,
-- seguridad,
-- arquitectura,
-- rendimiento,
-- consistencia con el proyecto.
-
----
-
-## 2. Problem framing antes que prompting
-
-Una de las ideas importantes del curso es que formular correctamente el problema es más importante que intentar escribir prompts extremadamente sofisticados.
-
-Antes de pedir una solución intentaré definir:
-
-- qué problema existe,
-- cuál es el objetivo,
-- qué restricciones hay,
-- qué comportamiento se espera,
-- qué partes del sistema pueden verse afectadas.
-
----
-
-## 3. Pensamiento sistémico
-
-Los cambios en software raramente afectan a una única clase.
-
-Por ejemplo, añadir un nuevo campo puede implicar cambios en:
-
-- base de datos,
-- entidad,
-- DTO,
-- comando,
-- handler,
-- repositorio,
-- mapper,
-- API,
-- frontend,
-- tests,
-- documentación.
-
-Por eso quiero desarrollar una visión más sistémica de los cambios.
-
----
-
-## 4. Edge cases
-
-La IA suele resolver correctamente el happy path.
-
-Sin embargo, el software real también debe gestionar situaciones excepcionales.
-
-Por ejemplo:
-
-- datos inexistentes,
-- valores nulos,
-- registros duplicados,
-- errores de autorización,
-- concurrencia,
-- estados inconsistentes,
-- datos antiguos,
-- problemas de red,
-- operaciones parciales.
-
-Detectar estos casos continúa siendo una responsabilidad importante del desarrollador.
-
----
-
-# Qué quiero aprender
-
-Durante esta formación quiero mejorar especialmente en las siguientes áreas:
+A lo largo del programa espero profundizar en:
 
 - Agentic Engineering
 - Harness Engineering
 - Context Engineering
 - Spec Driven Development
-- Model Context Protocol
 - Coding Agents
-- Code Review asistido por IA
-- Testing con IA
-- Arquitectura asistida por IA
-- Automatización del ciclo de desarrollo
+- Model Context Protocol
 - RAG
-- sistemas multiagente
-- observabilidad de agentes
-- seguridad
-- evaluación de modelos
-- DevSecOps asistido por IA
-
-También quiero aprender a distinguir cuándo una herramienta de IA realmente aumenta la productividad y cuándo simplemente introduce trabajo adicional de revisión.
-
----
-
-# Herramientas
-
-Durante el curso probablemente experimentaré con diferentes herramientas.
-
-Actualmente utilizo principalmente:
-
-- ChatGPT Plus
-- GitHub
-- Visual Studio
-- Visual Studio Code
-- .NET
-- SQL Server
-
-Durante el máster quiero incorporar progresivamente:
-
-- Claude Desktop
-- Claude Code
-- MCP
-- coding agents
-- herramientas de automatización
-- herramientas de evaluación
-
-El objetivo no es dominar diez herramientas distintas.
-
-Prefiero entender bien los principios y dominar unas pocas herramientas que pueda utilizar de forma profesional.
+- Sistemas multiagente
+- Testing asistido por IA
+- DevSecOps
+- Observabilidad
+- Seguridad
+- Arquitectura
+- Evaluación de agentes
 
 ---
 
-# Evolución esperada
+# Uso de este repositorio
 
-Mi punto de partida podría resumirse así:
+Este repositorio podrá contener diferentes tipos de contenido:
 
-**IA como chat**
-
-↓
-
-**IA con contexto manual**
-
-↓
-
-**IA conectada a herramientas mediante MCP**
-
-↓
-
-**Coding agent trabajando sobre un repositorio**
-
-↓
-
-**Agentes ejecutando tareas completas**
-
-↓
-
-**Desarrollador supervisando y orquestando el proceso**
-
-El objetivo final no es dejar de programar.
-
-El objetivo es aprender a utilizar la inteligencia artificial como multiplicador de capacidad sin perder el conocimiento técnico necesario para validar correctamente las soluciones.
-
----
-
-# Estado actual
-
-Este repositorio se encuentra actualmente en una fase inicial.
-
-Durante las primeras semanas probablemente contendrá:
-
-- documentación,
-- pequeños experimentos,
+- ejercicios del curso,
 - ejemplos,
-- pruebas de MCP,
-- ejercicios del máster,
-- código experimental.
+- pruebas técnicas,
+- documentación,
+- experimentos,
+- pequeños proyectos,
+- configuraciones,
+- notas de aprendizaje.
 
-La estructura evolucionará a medida que avance la formación.
+El contenido irá evolucionando a medida que avance el programa.
+
+No se trata de un proyecto de producción, sino de un entorno de experimentación destinado exclusivamente al aprendizaje.
 
 ---
 
-# Primer experimento con GitHub y Claude
+# Primeras pruebas
 
-Uno de los primeros experimentos de este repositorio consiste precisamente en utilizar este README como fuente de contexto.
+Una de las primeras pruebas del curso consiste en experimentar con herramientas capaces de acceder a fuentes externas mediante MCP.
 
-Claude Desktop está conectado a GitHub mediante su integración correspondiente.
+Por ejemplo:
 
-El objetivo de la prueba es pedirle a Claude que acceda a este repositorio y:
+- acceso controlado a archivos locales,
+- integración con GitHub,
+- lectura de documentación,
+- uso de herramientas desde un agente.
 
-1. Lea este README.
-2. Analice su contenido.
-3. Identifique los objetivos principales.
-4. Resuma la finalidad del repositorio.
-5. Explique cuáles son las motivaciones del desarrollador.
-6. Identifique las tecnologías y conceptos que quiero aprender.
-
-La prueba permitirá comprobar que Claude puede obtener información directamente desde GitHub sin que el contenido del README tenga que ser copiado manualmente dentro del chat.
-
-Este pequeño ejercicio representa precisamente uno de los primeros cambios de mentalidad del curso:
-
-**pasar de llevar manualmente el contexto hasta la IA a permitir que la IA obtenga el contexto mediante herramientas controladas.**
+Este repositorio permitirá realizar algunas de estas pruebas de forma segura.
 
 ---
 
 # Conclusión
 
-Este repositorio representa un entorno de aprendizaje.
+La inteligencia artificial está cambiando rápidamente la forma en la que se desarrolla software.
 
-No pretende demostrar que la inteligencia artificial pueda sustituir el trabajo de un desarrollador.
+La evolución no afecta únicamente a la generación de código.
 
-La intención es precisamente la contraria: aprender cómo debe evolucionar el trabajo del desarrollador cuando aparecen herramientas capaces de realizar una parte creciente de las tareas de implementación.
+También afecta a:
 
-Mi objetivo es pasar progresivamente de utilizar la IA únicamente como asistente conversacional a comprender cómo trabajar profesionalmente con agentes.
+- análisis,
+- arquitectura,
+- especificaciones,
+- testing,
+- documentación,
+- automatización,
+- infraestructura,
+- seguridad,
+- mantenimiento.
 
-Esto implica aprender a:
+El objetivo de este repositorio es acompañar ese proceso de aprendizaje y servir como espacio práctico durante el máster.
 
-- delegar,
-- proporcionar contexto,
-- escribir buenas especificaciones,
-- supervisar,
-- revisar,
-- validar,
-- medir resultados.
-
-El reto no consiste simplemente en conseguir que una IA escriba código.
-
-El verdadero reto consiste en conseguir que produzca software útil, mantenible y coherente con los requisitos, manteniendo siempre el criterio técnico y la responsabilidad final del desarrollador.
-
-Este repositorio será mi laboratorio para aprender a hacerlo.
+A medida que avance la formación, se irán incorporando nuevos experimentos, ejercicios y ejemplos relacionados con el uso profesional de inteligencia artificial en ingeniería de software.
